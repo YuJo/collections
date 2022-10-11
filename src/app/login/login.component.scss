@@ -1,0 +1,81 @@
+$login-box-width: 60vh;
+.login {
+  position: relative;
+  margin: 0px auto;
+  height: 100%;
+  width: 100%;
+}
+
+.img-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-wrapper {
+  position: absolute;
+  left: 393px;
+  top: 180px;
+}
+.login-ctrl {
+  min-height: 75px;
+}
+
+.company-logo {
+  position: absolute;
+  z-index: 3;
+  top: -80px;
+  left: -10px;
+  width: 610px;
+}
+
+.login-box {
+  position: relative;
+  width: $login-box-width;
+  text-align: center;
+  padding: 30px 0;
+  background-color: rgb(224, 224, 224); // transform:translateY(50%);
+  box-shadow: -3px 7px 15px -2px rgb(182, 183, 182);
+  div,
+  input,
+  button {
+    margin: 0px auto;
+    border-radius: 12px
+  }
+  h3 {
+    color: grey;
+    text-align: center; // margin: 1.5rem;
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+  input {
+    font-size: 1.2rem;
+    margin: 8px;
+    width: $login-box-width*0.6;
+    min-height: 40px;
+    box-shadow: -1px 1px 1px 1px rgb(170, 170, 170);
+    &:focus {
+      border-radius: 12px;
+    }
+  }
+  button {
+    width: 150px;
+    margin-bottom: 2rem;
+    margin-top: 20px;
+    border: none;
+  }
+  form {
+    text-align: center;
+    .login-input {
+      width: fit-content;
+    }
+  }
+  .movex_logo {
+    margin: 0 auto;
+  }
+}
+
+.movex_logo {
+  width: 330px;
+  content: url('/assets/img/MOVEX-Logo.png');
+  content: url('/assets/img/MOVEX-Logo.webp');
+}
