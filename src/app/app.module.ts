@@ -18,8 +18,6 @@ import { MatIconModule } from '@angular/material/icon';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
-
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,9 +25,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     LoginComponent
   ],
   imports: [
-    CommonModule,
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    CommonModule,
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,

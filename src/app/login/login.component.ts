@@ -13,14 +13,14 @@ import { ApiMiddlewareService } from '../api-middleware.service';
 export class LoginComponent implements OnInit {
 
   form = this.fb.group({
-    username: [null, [Validators.required]],
-    password: [null, [Validators.required]]
+    username: ['', [Validators.required]],
+    password: ['', [Validators.required]]
   });
 
   constructor(
     private fb: FormBuilder,
     private router: Router,
-    public translate: TranslateService,
+    public translateService: TranslateService,
     private ApiMiddlewareService: ApiMiddlewareService,
   ) { }
 
@@ -33,6 +33,14 @@ export class LoginComponent implements OnInit {
       this.router.navigate(['main-page']);
     })
     
+  }
+
+
+  changeLang() {
+    const currentLang = localStorage.getItem('currentLang');
+    const lang = currentLang==='en' ? 'zh-TW' : 'en';
+    this.translateService.use(lang);
+    localStorage.setItem('currentLang', lang);
   }
 
 }

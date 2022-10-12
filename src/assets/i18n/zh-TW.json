@@ -1,16 +1,12 @@
 {
-    "error": {
-      "code": 0,
-      "message": ""
-    },
     "data": {
       "ok": "OK",
       "save": "儲存",
       "cancel": "取消",
       "back": "上一頁",
       "login": "登入",
-      "username": "使用者名稱",
+      "username": "輸入驗證碼",
       "password": "使用者密碼"
     }
-  }
+}
   

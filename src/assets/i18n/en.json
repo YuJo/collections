@@ -1,9 +1,11 @@
 {
+  "data": {
   "ok": "OK",
   "save": "Save",
   "cancel": "Cancel",
   "back": "Back",
   "login": "Log in",
-  "username": "User name",
-  "password": "password"
+  "username": "Please enter the code",
+  "password": "Password"
+  }
 }

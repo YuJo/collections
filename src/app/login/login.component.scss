@@ -6,11 +6,6 @@ $login-box-width: 60vh;
   width: 100%;
 }
 
-.img-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 .login-wrapper {
   position: absolute;
   left: 393px;
@@ -21,18 +16,14 @@ $login-box-width: 60vh;
 }
 
 .company-logo {
-  position: absolute;
-  z-index: 3;
-  top: -80px;
-  left: -10px;
-  width: 610px;
+  width: 80px;
 }
 
 .login-box {
   position: relative;
   width: $login-box-width;
   text-align: center;
-  padding: 30px 0;
+  padding: 0;
   background-color: rgb(224, 224, 224); // transform:translateY(50%);
   box-shadow: -3px 7px 15px -2px rgb(182, 183, 182);
   div,
@@ -42,10 +33,10 @@ $login-box-width: 60vh;
     border-radius: 12px
   }
   h3 {
+    font-size: 36px;
     color: grey;
     text-align: center; // margin: 1.5rem;
     margin: 0px;
-    padding-bottom: 20px;
   }
   input {
     font-size: 1.2rem;
@@ -58,9 +49,10 @@ $login-box-width: 60vh;
     }
   }
   button {
-    width: 150px;
+    color: #F72617;
+    width: 40px;
     margin-bottom: 2rem;
-    margin-top: 20px;
+    margin-top: 24px;
     border: none;
   }
   form {
@@ -69,13 +61,19 @@ $login-box-width: 60vh;
       width: fit-content;
     }
   }
-  .movex_logo {
-    margin: 0 auto;
+}
+
+.__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .translate-btn {
+    color: white;
+    border: 1px #c9c9c9 solid;
+    padding: 4px;
+    border-radius: 20px;
+    margin: 14px;
+    cursor: pointer;
   }
 }
 
-.movex_logo {
-  width: 330px;
-  content: url('/assets/img/MOVEX-Logo.png');
-  content: url('/assets/img/MOVEX-Logo.webp');
-}

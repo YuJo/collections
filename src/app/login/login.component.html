@@ -1,16 +1,23 @@
 <div class="login">
     <div class="login-wrapper">
-      <!-- <img class="company-logo" src="../../../../assets/imgages/edenred.png" > -->
       <div class="login-box">
-        <h3 class="__title">{{ 'data.login' | translate }} </h3>
+        <div class="__title">
+          <img class="company-logo" src="../../assets/images/edenred.png" >
+          <h3>
+            {{ 'data.login' | translate }} 
+          </h3>
+          <mat-icon class="translate-btn" color="primary" (click)="changeLang()">translate</mat-icon>
+        </div>
+
         <form [formGroup]="form" (ngSubmit)="login()">
           <div class="login-input">
               <input type="text" id="username" formControlName="username" maxlength="80" [placeholder]="'data.username' | translate" >
-              <input type="password" id="password" formControlName="password" maxlength="50" [placeholder]="'data.password' | translate">
+              <!-- <input type="password" id="password" formControlName="password" maxlength="50" [placeholder]="'data.password' | translate"> -->
+              <button mat-button type="submit">
+                <mat-icon>keyboard_arrow_right</mat-icon>
+              </button>
           </div>
-          <button mat-button color="primary" type="submit">
-            <mat-icon class="edit-btn__icon">keyboard_arrow_right</mat-icon>
-          </button>
+
         </form>
       </div>
     </div>
