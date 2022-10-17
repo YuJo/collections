@@ -7,20 +7,13 @@ $login-box-width: 60vh;
   width: 100%;
 }
 
-.login-wrapper {
-  position: absolute;
-}
-.login-ctrl {
-  min-height: 75px;
-}
-
 .company-logo {
   width: 80px;
 }
 
 .login-box {
   position: relative;
-  width: $login-box-width;
+  width: 100%;
   text-align: center;
   padding: 0;
   background-color: rgb(224, 224, 224); // transform:translateY(50%);
@@ -42,7 +35,9 @@ $login-box-width: 60vh;
     margin: 8px;
     width: $login-box-width*0.6;
     min-height: 40px;
-    box-shadow: -1px 1px 1px 1px rgb(170, 170, 170);
+    border: unset;
+    padding-left: 12px;
+    box-shadow: 1px 1px 1px 1px rgb(170, 170, 170);
     &:focus {
       border-radius: 12px;
     }
@@ -76,3 +71,19 @@ $login-box-width: 60vh;
   }
 }
 
+
+@media (max-width: 576px) {
+  .login-box {
+    margin: 0px auto;
+    input {
+      width: 60%;
+      font-size: 1rem;
+    }
+    h3 {
+      font-size: 24px;
+    }
+  }
+  button {
+    width: 36px;
+  }
+}
