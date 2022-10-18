@@ -1,17 +1,19 @@
 <div class="login">
     <div class="login-wrapper">
+
       <div class="login-box">
+        <img class="company-logo" src="../../assets/images/edenred-logo.png" >
         <div class="__title">
-          <img class="company-logo" src="../../assets/images/edenred.png" >
+          <!-- <img class="company-logo" src="../../assets/images/edenred.png" > -->
           <h3>
-            {{ 'data.login' | translate }} 
+            {{ 'data.benefitXpress' | translate }} 
           </h3>
-          <mat-icon class="translate-btn" color="primary" (click)="changeLang()">translate</mat-icon>
+          <app-i18n-button></app-i18n-button>
         </div>
 
         <form [formGroup]="form" (ngSubmit)="login()">
           <div class="login-input">
-              <input type="text" id="username" formControlName="username" maxlength="80" [placeholder]="'data.username' | translate" >
+              <input type="text" id="username" formControlName="username" maxlength="80" [placeholder]="'data.enterCode' | translate" >
               <!-- <input type="password" id="password" formControlName="password" maxlength="50" [placeholder]="'data.password' | translate"> -->
               <button mat-button type="submit">
                 <mat-icon>keyboard_arrow_right</mat-icon>

@@ -5,10 +5,11 @@ $login-box-width: 60vh;
   justify-content:center;
   height: 100%;
   width: 100%;
+  background-color: #F72617;
 }
 
 .company-logo {
-  width: 80px;
+  width: 240px;
 }
 
 .login-box {
@@ -16,8 +17,8 @@ $login-box-width: 60vh;
   width: 100%;
   text-align: center;
   padding: 0;
-  background-color: rgb(224, 224, 224); // transform:translateY(50%);
-  box-shadow: -3px 7px 15px -2px rgb(182, 183, 182);
+  // background-color: rgb(224, 224, 224); 
+  // box-shadow: -3px 7px 15px -2px rgb(182, 183, 182);
   div,
   input,
   button {
@@ -26,7 +27,7 @@ $login-box-width: 60vh;
   }
   h3 {
     font-size: 36px;
-    color: grey;
+    color: #ffffff;
     text-align: center; // margin: 1.5rem;
     margin: 0px;
   }
@@ -43,7 +44,7 @@ $login-box-width: 60vh;
     }
   }
   button {
-    color: #F72617;
+    color: #ffffff;
     width: 40px;
     margin-bottom: 2rem;
     margin-top: 24px;
@@ -61,14 +62,6 @@ $login-box-width: 60vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .translate-btn {
-    color: white;
-    border: 1px #c9c9c9 solid;
-    padding: 4px;
-    border-radius: 20px;
-    margin: 14px;
-    cursor: pointer;
-  }
 }
 
 

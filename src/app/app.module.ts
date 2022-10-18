@@ -14,6 +14,7 @@ import { CommonModule } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { I18nButtonComponent } from './shared/i18n-button/i18n-button.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -22,7 +23,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     MainPageComponent,
-    LoginComponent
+    LoginComponent,
+    I18nButtonComponent
   ],
   imports: [
     AppRoutingModule,

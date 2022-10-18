@@ -1,12 +1,14 @@
 {
-    "data": {
-      "ok": "OK",
-      "save": "儲存",
-      "cancel": "取消",
-      "back": "上一頁",
-      "login": "登入",
-      "username": "輸入驗證碼",
-      "password": "使用者密碼"
-    }
+  "data": {
+    "ok": "OK",
+    "save": "儲存",
+    "cancel": "取消",
+    "back": "上一頁",
+    "login": "登入",
+    "enterCode": "輸入驗證碼",
+    "benefitXpress": "福利即享券",
+    "username": "使用者帳號",
+    "password": "四位數密碼密碼",
+    "myTickets": "我的票券"
+  }
 }
-  

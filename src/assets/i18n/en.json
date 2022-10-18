@@ -5,7 +5,10 @@
   "cancel": "Cancel",
   "back": "Back",
   "login": "Log in",
-  "username": "Please enter the code",
-  "password": "Password"
+  "enterCode": "Please enter the code",
+  "benefitXpress": "Benefit Xpress",
+  "username": "Username",
+  "password": "Code",
+  "myTickets": "My tickets"
   }
 }

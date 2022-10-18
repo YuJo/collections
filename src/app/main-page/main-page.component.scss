@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    .company-logo {
+        width: 72px;
+    }
+    .settings {
+        width: 24%;
+        min-width: 60px;
+        max-width: 240px;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+
+.my-tickets {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 800;
+    width: 80%;
+    color: #ffffff;
+    background-color: #F72617;
+    min-width: 24px;
+    max-width: 80px;
+    margin: auto 0px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    &:hover {
+        color: #dfd5d5;
+        background-color: #df1e10;
+    }
+}
