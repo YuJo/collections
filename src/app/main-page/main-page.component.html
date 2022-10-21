@@ -4,6 +4,13 @@
         <app-i18n-button></app-i18n-button>
         <span class="my-tickets">{{ 'data.myTickets' | translate }} </span>
     </div>
-    
+</div>
+<div class="title">
+    <span>$ 6000 元 福利及享券</span>
+</div>
+<div class="store-list">
+    <ng-container *ngFor="let store of storeLogoList">
+        <app-store-section [imgName]="store" (click)="getVoucher(store)"></app-store-section>
+    </ng-container>
 </div>
   

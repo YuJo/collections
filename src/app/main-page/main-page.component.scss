@@ -14,6 +14,19 @@
     }
 }
 
+.title {
+    width: 100%;
+    margin: 32px 0px;
+    color: rgb(31, 56, 199);
+    font-size: 16px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    span {
+        margin: auto;
+    }
+}
+
 
 .my-tickets {
     padding: 8px 16px;
@@ -31,5 +44,23 @@
     &:hover {
         color: #dfd5d5;
         background-color: #df1e10;
+    }
+}
+
+
+.store-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 32px;
+}
+
+@media (max-width: 576px) {
+    .header .settings {
+        width: 50%;
+        min-width: 60px;
+        max-width: 320px;
+        display: flex;
+        justify-content: flex-end;
     }
 }

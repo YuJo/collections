@@ -1,0 +1,21 @@
+.store-section {
+    width: 200px;
+    border-radius: 50%;
+    margin: 16px;
+    img {
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 1px 1px rgb(218, 218, 218);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .store-section {
+        width: 64px;
+    }
+  }

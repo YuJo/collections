@@ -4,7 +4,6 @@ import { ApiMiddlewareService } from './api-middleware.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MainPageComponent } from './main-page/main-page.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,6 +14,11 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { I18nButtonComponent } from './shared/i18n-button/i18n-button.component';
+import { StoreSectionComponent } from './shared/store-section/store-section.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MainPageComponent } from './main-page/main-page.component';
+import { SelectAmountComponent } from './select-amount/select-amount.component';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -22,9 +26,11 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    MainPageComponent,
     LoginComponent,
-    I18nButtonComponent
+    I18nButtonComponent,
+    StoreSectionComponent,
+    MainPageComponent,
+    SelectAmountComponent,
   ],
   imports: [
     AppRoutingModule,
@@ -44,6 +50,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatInputModule,
     MatButtonModule,
     MatIconModule,
+    MatDialogModule,
   ],
   providers: [ApiMiddlewareService],
   bootstrap: [AppComponent]
