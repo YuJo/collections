@@ -1,11 +1,16 @@
 .store-section {
     width: 200px;
+    height: 200px;
     border-radius: 50%;
+    border: 1px #dddddd solid;
     margin: 16px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     img {
-        width: 100%;
-        border-radius: 50%;
-        box-shadow: 1px 1px rgb(218, 218, 218);
+        width: 60%;
+        height: 60%;
+        margin: auto;
     }
 
     &:hover {
@@ -16,6 +21,8 @@
 
 @media (max-width: 576px) {
     .store-section {
-        width: 64px;
+        width: 72px;
+        height: 72px;
+        margin: 8px;
     }
   }

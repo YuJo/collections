@@ -21,14 +21,14 @@ export class LoginComponent implements OnInit {
     private fb: FormBuilder,
     private router: Router,
     public translateService: TranslateService,
-    private ApiMiddlewareService: ApiMiddlewareService,
+    private apiMiddlewareService: ApiMiddlewareService,
   ) { }
 
   ngOnInit(): void {
   }
 
   login() {
-    this.ApiMiddlewareService.login().subscribe(res => {
+    this.apiMiddlewareService.login().subscribe(res => {
       console.log(res);
       this.router.navigate(['main-page']);
     })

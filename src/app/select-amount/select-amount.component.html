@@ -1,4 +1,11 @@
-<div>
+<div class="store-title">
     <app-store-section [imgName]="store"></app-store-section>
-    
+    <span class="description">福利及享券</span>
+    <div class="left-value">可選餘額: $6000</div>
 </div>
+<div class="amount-list">
+    <span class="amount" *ngFor="let amount of amountList">
+      $  {{ amount }}
+    </span>
+</div>
+  

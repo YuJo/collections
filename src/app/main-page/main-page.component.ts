@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { ApiMiddlewareService } from '../api-middleware.service';
 import { SelectAmountComponent } from '../select-amount/select-amount.component';
 
 @Component({
@@ -9,14 +10,17 @@ import { SelectAmountComponent } from '../select-amount/select-amount.component'
 })
 export class MainPageComponent implements OnInit {
 
-  storeLogoList = ['seven-logo', 'momo-logo', 'hilife-logo', 'fmart-logo']
+  storeLogoList: string[] | [] = [];
 
   constructor(
     public dialog: MatDialog,
+    private apiMiddlewareService: ApiMiddlewareService,
   ) { }
 
   ngOnInit(): void {
-
+    this.apiMiddlewareService.getStores().subscribe(res => {
+      this.storeLogoList = res.stores;
+    })
   }
 
   getVoucher(storeName: string) {
